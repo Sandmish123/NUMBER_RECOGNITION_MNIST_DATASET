@@ -47,7 +47,7 @@ import io
 @st.cache(allow_output_mutation=True)  # Cache the model to avoid loading it multiple times
 def load_model():
     # Assuming 'mnist_cnn_model.pkl' is a serialized TensorFlow model
-    model = tf.keras.models.load_model('mnist_cnn_model.pkl')
+    model = tf.keras.models.load_model('mnist_cnn_model.h5')
     return model
 
 # Function to preprocess image
