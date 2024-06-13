@@ -99,14 +99,13 @@
 
 
 
-
 import streamlit as st
 import tensorflow as tf
 from PIL import Image
 import numpy as np
 
 # Function to load the model from the HDF5 file
-@st.cache_data(allow_output_mutation=True)  # Updated caching command
+@st.cache_data()
 def load_model():
     # Load the model in HDF5 format
     model = tf.keras.models.load_model('mnist_cnn_model.h5')
@@ -153,7 +152,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-# if __name__ == '__main__':
-#     main()
