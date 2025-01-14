@@ -112,4 +112,3 @@ Install the dependencies using the provided `requirements.txt` file.
 
 ---
 
-This project demonstrates the power of CNNs in image classification and offers a great starting point for further research in computer vision tasks. Feel free to explore and contribute to the repository!
